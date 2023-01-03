@@ -11,7 +11,7 @@
 
 ## 입출력 예
 
-[](description.png)
+![입출력 예](description.png)
 
 ## 출처
 
