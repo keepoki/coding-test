@@ -1,5 +1,6 @@
 /**
  * 1. 두 수의 나눗셈
+ * https://school.programmers.co.kr/learn/courses/30/lessons/120806
  * 정수 num1과 num2가 매개변수로 주어질 때, num1을 num2로
  * 나눈 값에 1,000을 곱한 후 정수 부분을
  * return 하도록 soltuion 함수를 완성해주세요.
@@ -10,6 +11,7 @@ function solution(num1, num2) {
 
 /**
  * 2. 숫자 비교하기
+ * https://school.programmers.co.kr/learn/courses/30/lessons/120807
  * 정수 num1과 num2가 매개변수로 주어집니다. 두 수가 같으면 1 다르면 -1을
  * retrun하도록 solution 함수를 완성해주세요.
  */
@@ -18,7 +20,8 @@ function solution(num1, num2) {
 }
 
 /**
- * 3. 분수의 덧셈(3.분수의-덧셈 폴더 참고)
+ * 3. 분수의 덧셈(폴더 참고)
+ * https://school.programmers.co.kr/learn/courses/30/lessons/120808
  * 첫 번째 분수의 분자와 분모를 뜻하는 denum1, num1,
  * 두 번째 분수의 분자와 분모를 뜻하는 denum2, num2가 매개변수로 주어집니다.
  * 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을
@@ -40,6 +43,7 @@ function solution(denum1, num1, denum2, num2) {
 
 /**
  * 4. 배열 두배 만들기
+ * https://school.programmers.co.kr/learn/courses/30/lessons/120809
  * 정수 배열 numbers가 매개변수로 주어집니다.
  * numbers의 각 원소에 두배한 원소를 가진 배열을
  * return하도록 solution 함수를 완성해주세요.
