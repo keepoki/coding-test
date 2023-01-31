@@ -26,13 +26,13 @@ function solution(n) {
  */
 function solution(n) {
   const pieces = 6;
+  const getGCD = (a, b) => (b ? getGCD(b, a % b) : a);
+  const getLCM = (a, b) => (a * b) / getGCD(a, b);
+
   // 피자 조각의 개수 6과 나눠 먹을 사람의 수 n의 최소 공배수를 구하고
-  // 6으로 나누면 몇 판을 시켜야하는지 나온다.
+  // 6으로 나누면, 주문해야 할 피자 수가 몇판인지 나온다.
   return getLCM(n, pieces) / pieces;
 }
-
-const getGCD = (a, b) => (b ? getGCD(b, a % b) : a);
-const getLCM = (a, b) => (a * b) / getGCD(a, b);
 
 /**
  * 3. 피자 나눠 먹기(3)
