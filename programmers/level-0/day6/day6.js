@@ -45,7 +45,8 @@ function solution(my_string) {
  * https://school.programmers.co.kr/learn/courses/30/lessons/120824
  * 정수가 담긴 리스트 num_list가 주어질 때, num_list의 원소 중 짝수와 홀수의
  * 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.
- * 예) [1, 2, 3, 4, 5] =>	[2, 3] // [1, 3, 5, 7] =>	[0, 4]
+ * 예) [1, 2, 3, 4, 5] =>	[2, 3]
+ * [1, 3, 5, 7] => [0, 4]
  */
 function solution(num_list) {
   const answer = [0, 0];
@@ -62,7 +63,8 @@ function solution(num_list) {
  * https://school.programmers.co.kr/learn/courses/30/lessons/120825
  * 문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string에 들어있는
  * 각 문자를 n만큼 반복한 문자열을 return 하도록 solution 함수를 완성해보세요.
- * 예) "hello", 3 => "hhheeellllllooo"
+ * 예) my_string, n => result
+ * "hello", 3 => "hhheeellllllooo"
  */
 function solution(my_string, n) {
   return my_string
