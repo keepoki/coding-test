@@ -36,7 +36,7 @@
 
 ### 첫 번째 해결 방법
 
-1. 두 분모의 곱을 공통 분모로 하여 값을 계산한다.
+1. 두 분모의 곱을 공통분모로 하여 값을 계산한다.
 2. 분자와 분모의 [최대공약수](https://ko.wikipedia.org/wiki/%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98)를 구하여 값을 나눈다.
    - [소인수분해](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%9D%B8%EC%88%98%EB%B6%84%ED%95%B4)로 가능하지만, [유클리드 호제법](https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C_%ED%98%B8%EC%A0%9C%EB%B2%95)을 이용하여 최적화한다.
 
