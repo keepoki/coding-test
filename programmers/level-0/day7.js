@@ -7,8 +7,10 @@
  * "abcdef", "f" => "abcde"
  */
 function solution(my_string, letter) {
-  return my_string.replaceAll(letter, "");
+  return my_string.replaceAll(letter, '');
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 2. 각도기
@@ -38,6 +40,8 @@ function solution(angle) {
   return answer;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 3. 양꼬치
  * https://school.programmers.co.kr/learn/courses/30/lessons/120830
@@ -56,6 +60,8 @@ function solution(n, k) {
     n * lambSkewersPrice + k * drinkPrice - parseInt(n / 10, 10) * drinkPrice
   );
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 짝수의 합

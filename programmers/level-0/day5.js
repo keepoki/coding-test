@@ -8,22 +8,24 @@
  */
 function solution(price) {
   const salePrice = {
-    "20%": 500000,
-    "10%": 300000,
-    "5%": 100000,
+    '20%': 500000,
+    '10%': 300000,
+    '5%': 100000,
   };
   const getSalePrice = (price, percent) => price - price * percent;
 
-  if (price >= salePrice["20%"]) {
+  if (price >= salePrice['20%']) {
     price = getSalePrice(price, 0.2);
-  } else if (price >= salePrice["10%"]) {
+  } else if (price >= salePrice['10%']) {
     price = getSalePrice(price, 0.1);
-  } else if (price >= salePrice["5%"]) {
+  } else if (price >= salePrice['5%']) {
     price = getSalePrice(price, 0.05);
   }
 
   return parseInt(price, 10);
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 2. 아이스 아메리카노
@@ -39,6 +41,8 @@ function solution(money) {
   return [parseInt(money / americanoPrice, 10), money % americanoPrice];
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 3. 나이 출력
  * https://school.programmers.co.kr/learn/courses/30/lessons/120820
@@ -49,6 +53,8 @@ function solution(money) {
 function solution(age) {
   return 2022 - age + 1;
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 배열 뒤집기

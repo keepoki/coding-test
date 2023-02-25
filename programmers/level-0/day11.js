@@ -22,6 +22,8 @@ function solution(box, n) {
   return parseInt(box[0] / n) * parseInt(box[1] / n) * parseInt(box[2] / n);
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 2. 합성수 찾기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120846
@@ -66,10 +68,10 @@ function solution(n) {
   return answer;
 }
 
-// 에라토스테네스의 체를 활용한 다른 풀이
+// 두 번째 방법: 에라토스테네스의 체를 활용한다.
 function solution(n) {
   let answer = 0;
-  // 초깃값 설정
+  // 초기값 설정
   const arr = new Array(n + 1).fill(true);
   const end = Math.sqrt(n);
 
@@ -92,6 +94,8 @@ function solution(n) {
   return n - answer - 1;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 3. 최댓값 만들기(1)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120847
@@ -103,6 +107,8 @@ function solution(numbers) {
   numbers.sort((a, b) => b - a);
   return numbers[0] * numbers[1];
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 팩토리얼

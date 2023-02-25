@@ -6,8 +6,10 @@
  * 예) "jaron" => "noraj"
  */
 function solution(my_string) {
-  return my_string.split("").reverse().join("");
+  return my_string.split('').reverse().join('');
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 2. 직각삼각형 출력하기
@@ -20,7 +22,7 @@ function solution(my_string) {
  *           ***
  */
 {
-  const readline = require("readline");
+  const readline = require('readline');
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -28,17 +30,19 @@ function solution(my_string) {
 
   let input = [];
 
-  rl.on("line", function (line) {
-    input = line.split(" ");
-  }).on("close", function () {
+  rl.on('line', function (line) {
+    input = line.split(' ');
+  }).on('close', function () {
     const inputNum = Number(input[0]);
-    let result = "";
+    let result = '';
     for (let i = 1; i <= inputNum; ++i) {
-      result = "*".repeat(i);
+      result = '*'.repeat(i);
       console.log(result);
     }
   });
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 3. 짝수 홀수 개수
@@ -57,6 +61,8 @@ function solution(num_list) {
   return answer;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 4. 문자 반복 출력하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120825
@@ -67,7 +73,7 @@ function solution(num_list) {
  */
 function solution(my_string, n) {
   return my_string
-    .split("")
+    .split('')
     .map(value => value.repeat(n))
-    .join("");
+    .join('');
 }

@@ -22,6 +22,8 @@ function solution(dot) {
   return dot[0] > 0 ? (dot[1] > 0 ? 1 : 4) : dot[1] > 0 ? 2 : 3;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 2. 2차원으로 만들기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120842
@@ -34,11 +36,10 @@ function solution(dot) {
  * [1, 2, 3, 4, 5, 6, 7, 8], 2 => [[1, 2], [3, 4], [5, 6], [7, 8]]
  * [100, 95, 2, 4, 5, 6, 18, 33, 948], 3 => [[100, 95, 2], [4, 5, 6], [18, 33, 948]]
  *
- * splice() 메서드는 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경한다.
- * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
  */
 function solution(num_list, n) {
   const answer = [];
+  // splice 메서드를 통해 원본 배열에 일부를 떼어 반환하여 length가 줄어든다.
   while (num_list.length) answer.push(num_list.splice(0, n));
   return answer;
 }
@@ -47,10 +48,13 @@ function solution(num_list, n) {
 function solution(num_list, n) {
   const answer = [];
   for (let i = 0; i < num_list.length / n; ++i) {
+    // slice 메서드를 이용하여 원본 배열에는 영향이 가지 않는다.
     answer.push(num_list.slice(i * n, i * n + n));
   }
   return answer;
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 3. 공 던지기
@@ -76,6 +80,8 @@ function solution(numbers, k) {
   return numbers[answer];
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 4. 배열 회전시키기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120844
@@ -85,13 +91,6 @@ function solution(numbers, k) {
  * 예) numbers, direction => result
  * [1, 2, 3], "right" => [3, 1, 2]
  * [4, 455, 6, 4, -1, 45, 6], "left" => [455, 6, 4, -1, 45, 6, 4]
- *
- * shift() 메서드는 배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환한다.
- * 이 메서드는 배열의 길이를 변하게 한다.
- * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
- *
- * pop() 메서드는 배열에서 마지막 요소를 제거하고 그 요소를 반환한다.
- * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
  */
 function solution(numbers, direction) {
   if (direction === 'right') {

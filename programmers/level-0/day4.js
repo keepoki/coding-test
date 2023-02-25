@@ -15,6 +15,8 @@ function solution(n) {
   return answer;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 2. 피자 나눠 먹기(2)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120815
@@ -34,6 +36,8 @@ function solution(n) {
   return getLCM(n, pieces) / pieces;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 3. 피자 나눠 먹기(3)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120816
@@ -49,6 +53,8 @@ function solution(slice, n) {
   // Math.ceil() 메서드는 소수점을 올림하여 정수로 반환한다.
   return Math.ceil(n / slice);
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 배열의 평균값

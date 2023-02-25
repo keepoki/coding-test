@@ -12,6 +12,8 @@ function solution(numbers, num1, num2) {
   return numbers.slice(num1, num2 + 1);
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 2. 외계행성의 나이
  * https://school.programmers.co.kr/learn/courses/30/lessons/120834
@@ -34,6 +36,8 @@ function solution(age) {
     );
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 3. 진료순서 정하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120835
@@ -47,6 +51,8 @@ function solution(emergency) {
   const priority = [...emergency].sort((a, b) => b - a);
   return emergency.map(value => priority.indexOf(value) + 1);
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 순서쌍의 개수
@@ -66,9 +72,7 @@ function solution(n) {
       answer++;
     }
   }
-  answer++;
-
-  return answer;
+  return answer++;
 }
 
 /**

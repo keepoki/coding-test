@@ -9,6 +9,8 @@ function solution(num1, num2) {
   return parseInt((num1 / num2) * 1000, 10);
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 2. 숫자 비교하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120807
@@ -19,6 +21,8 @@ function solution(num1, num2) {
   return num1 === num2 ? 1 : -1;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 3. 분수의 덧셈(폴더 참고)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120808
@@ -26,8 +30,11 @@ function solution(num1, num2) {
  * 두 번째 분수의 분자와 분모를 뜻하는 denum2, num2가 매개변수로 주어집니다.
  * 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을
  * return 하도록 solution 함수를 완성해보세요.
+ *
+ * 첫 번째 방법: 두 분모의 곱을 공통분모로 하여 값을 계산한다.
+ * 직관적으로는 '소인수분해'로 가능하지만, '유클리드 호제법'을 이용하여 최적화한다.
+ * - 최대공약수는 영어로 GCD(Greatest Common Divisor)이다.
  */
-// 첫 번째 방법 (두 분모의 곱을 공통분모로 하여 값을 계산한다.)
 function solution(denum1, num1, denum2, num2) {
   // 1. 두 분모의 곱을 공통 분모로 하여 값을 계산한다.
   let numerator = denum1 * num2 + denum2 * num1;
@@ -42,7 +49,11 @@ function solution(denum1, num1, denum2, num2) {
   return [numerator, denominator];
 }
 
-// 두 번째 방법 (두 분모의 최소공배수를 공통분모로 하여 값을 계산한다.)
+/**
+ * 두 번째 방법: 두 분모의 '최소공배수'를 공통분모로 하여 값을 계산한다.
+ * 직관적으로는 '소인수분해'로 가능하지만, '유클리드 호제법'을 이용하여 최적화한다.
+ *  - 최소공배수는 영어로 LCM(Least Common Multiple)이다.
+ */
 function solution(denum1, num1, denum2, num2) {
   // 1. 두 분모의 최소공배수를 공통분모로 하여 값을 계산한다.
   const getGCD = (a, b) => (b ? getGCD(b, a % b) : a);
@@ -59,6 +70,8 @@ function solution(denum1, num1, denum2, num2) {
 
   return [numerator, denominator];
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 배열 두배 만들기

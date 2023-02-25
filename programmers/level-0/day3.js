@@ -8,6 +8,8 @@ function solution(num1, num2) {
   return num1 % num2;
 }
 
+// ------------------------------------------------------------------------
+
 /**
  * 2. 중앙값 구하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120811
@@ -26,6 +28,8 @@ function solution(array) {
 
   return array[index];
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 3. 최빈값 구하기
@@ -64,6 +68,8 @@ function solution(array) {
 
   return parseInt(answer, 10);
 }
+
+// ------------------------------------------------------------------------
 
 /**
  * 4. 짝수는 싫어요
