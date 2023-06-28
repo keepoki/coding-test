@@ -10,7 +10,6 @@ function solution(num1, num2) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 숫자 비교하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120807
@@ -22,7 +21,6 @@ function solution(num1, num2) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 분수의 덧셈(폴더 참고)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120808
@@ -48,7 +46,6 @@ function solution(denum1, num1, denum2, num2) {
 
   return [numerator, denominator];
 }
-
 /**
  * 두 번째 방법: 두 분모의 '최소공배수'를 공통분모로 하여 값을 계산한다.
  * 직관적으로는 '소인수분해'로 가능하지만, '유클리드 호제법'을 이용하여 최적화한다.
@@ -72,7 +69,6 @@ function solution(denum1, num1, denum2, num2) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 배열 두배 만들기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120809

@@ -27,7 +27,6 @@ function solution(hp) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 모스부호 (1)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120838
@@ -47,31 +46,11 @@ function solution(hp) {
  */
 function solution(letter) {
   const morse = {
-    '.-': 'a',
-    '-...': 'b',
-    '-.-.': 'c',
-    '-..': 'd',
-    '.': 'e',
-    '..-.': 'f',
-    '--.': 'g',
-    '....': 'h',
-    '..': 'i',
-    '.---': 'j',
-    '-.-': 'k',
-    '.-..': 'l',
-    '--': 'm',
-    '-.': 'n',
-    '---': 'o',
-    '.--.': 'p',
-    '--.-': 'q',
-    '.-.': 'r',
-    '...': 's',
-    '-': 't',
-    '..-': 'u',
-    '...-': 'v',
-    '.--': 'w',
-    '-..-': 'x',
-    '-.--': 'y',
+    '.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e',
+    '..-.': 'f', '--.': 'g', '....': 'h', '..': 'i', '.---': 'j',
+    '-.-': 'k', '.-..': 'l', '--': 'm', '-.': 'n', '---': 'o',
+    '.--.': 'p', '--.-': 'q', '.-.': 'r', '...': 's', '-': 't',
+    '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x', '-.--': 'y',
     '--..': 'z',
   };
 
@@ -81,7 +60,6 @@ function solution(letter) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 가위 바위 보
  * https://school.programmers.co.kr/learn/courses/30/lessons/120839
@@ -92,9 +70,7 @@ function solution(letter) {
  */
 // 첫 번째 방법
 function solution(rsp) {
-  const SCISSORS = '2',
-    ROCK = '0',
-    PAPER = '5';
+  const SCISSORS = '2', ROCK = '0', PAPER = '5';
   // 문자열 -> 배열 -> acc에 이기는 수의 문자를 붙혀나간다. -> acc를 리턴
   return rsp.split('').reduce((acc, val) => {
     switch (val) {
@@ -111,20 +87,16 @@ function solution(rsp) {
     return acc;
   }, '');
 }
-
-// 두 번째 방법: 객체의 key에는 가위, 바위, 보를 넣고 value에는 이기는 수를 넣는다.
+// 두 번째 방법: 객체의 key에는 가위, 바위, 보를 넣고 
+// value에는 이기는 수를 넣는다.
 function solution(rsp) {
   // 가위 -> 바위, 바위 -> 보, 보 -> 가위가 되도록 정의
   const define = { 2: '0', 0: '5', 5: '2' };
   // 문자열 -> 배열 -> define을 통한 새로운 배열 -> 문자열
-  return rsp
-    .split('')
-    .map(value => define[value])
-    .join('');
+  return rsp.split('').map(value => define[value]).join('');
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 구슬을 나누는 경우의 수
  * https://school.programmers.co.kr/learn/courses/30/lessons/120840
@@ -156,7 +128,6 @@ function solution(balls, share) {
     getFactorial(balls) / (getFactorial(balls - share) * getFactorial(share)),
   );
 }
-
 /**
  * 두 번째 방법: BigInt 활용
  * 재귀함수로 하는 경우 스택 오버 플로우가 발생하여 런타임 에러로 인해
@@ -166,8 +137,7 @@ function solution(balls, share) {
  */
 function solution(balls, share) {
   const getFactorial = n => {
-    let i = 0,
-      factorial = BigInt(1);
+    let i = 0, factorial = BigInt(1);
     while (i < n) {
       i++;
       factorial *= BigInt(i);

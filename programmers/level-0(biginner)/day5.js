@@ -26,7 +26,6 @@ function solution(price) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 아이스 아메리카노
  * https://school.programmers.co.kr/learn/courses/30/lessons/120819
@@ -42,7 +41,6 @@ function solution(money) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 나이 출력
  * https://school.programmers.co.kr/learn/courses/30/lessons/120820
@@ -55,7 +53,6 @@ function solution(age) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 배열 뒤집기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120821
