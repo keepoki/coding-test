@@ -13,7 +13,6 @@ function solution(numbers, num1, num2) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 외계행성의 나이
  * https://school.programmers.co.kr/learn/courses/30/lessons/120834
@@ -37,7 +36,6 @@ function solution(age) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 진료순서 정하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120835
@@ -53,7 +51,6 @@ function solution(emergency) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 순서쌍의 개수
  * https://school.programmers.co.kr/learn/courses/30/lessons/120836
@@ -74,9 +71,8 @@ function solution(n) {
   }
   return answer++;
 }
-
 /**
- * 더 최적화 된 다른 사람의 풀이, O(√n)의 시간복잡도를 가진다.
+ * 더 최적화된 다른 사람의 풀이, O(√n)의 시간 복잡도를 가진다.
  * 참고 자료 1: https://chwan.tistory.com/entry/Java-%EC%95%BD%EC%88%98%EC%9D%98-%EA%B0%9C%EC%88%98-%EA%B5%AC%ED%95%98%EA%B8%B0
  * 참고 자료 2: https://doodle-ns.tistory.com/32
  */

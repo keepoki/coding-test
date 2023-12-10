@@ -23,7 +23,6 @@ function solution(box, n) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 합성수 찾기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120846
@@ -46,9 +45,7 @@ function solution(box, n) {
  * 불필요한 숫자는 확인하지 않는 방법으로 순회하는 횟수를 많이 줄일 수 있다.
  */
 function solution(n) {
-  let answer = 0,
-    count = 0,
-    operand = 0;
+  let answer = 0, count = 0, operand = 0;
   for (let i = 1; i <= n; ++i) {
     count = 0;
     operand = Math.sqrt(n);
@@ -67,7 +64,6 @@ function solution(n) {
 
   return answer;
 }
-
 // 두 번째 방법: 에라토스테네스의 체를 활용한다.
 function solution(n) {
   let answer = 0;
@@ -95,7 +91,6 @@ function solution(n) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 최댓값 만들기(1)
  * https://school.programmers.co.kr/learn/courses/30/lessons/120847
@@ -109,7 +104,6 @@ function solution(numbers) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 팩토리얼
  * https://school.programmers.co.kr/learn/courses/30/lessons/120848
@@ -119,8 +113,7 @@ function solution(numbers) {
  * 예) 3628800 => 10 // 7 => 3
  */
 function solution(n) {
-  let answer = 0,
-    count = 1;
+  let answer = 0, count = 1;
   const factorial = n => (n === 1 ? 1 : n * factorial(n - 1));
 
   while (true) {

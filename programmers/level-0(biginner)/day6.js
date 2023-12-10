@@ -10,7 +10,6 @@ function solution(my_string) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 직각삼각형 출력하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120823
@@ -43,7 +42,6 @@ function solution(my_string) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 짝수 홀수 개수
  * https://school.programmers.co.kr/learn/courses/30/lessons/120824
@@ -53,16 +51,11 @@ function solution(my_string) {
  */
 function solution(num_list) {
   const answer = [0, 0];
-
-  num_list.forEach(value => {
-    value % 2 === 0 ? answer[0]++ : answer[1]++;
-  });
-
+  num_list.forEach(value => value % 2 === 0 ? answer[0]++ : answer[1]++);
   return answer;
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 문자 반복 출력하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120825
@@ -72,8 +65,5 @@ function solution(num_list) {
  * "hello", 3 => "hhheeellllllooo"
  */
 function solution(my_string, n) {
-  return my_string
-    .split('')
-    .map(value => value.repeat(n))
-    .join('');
+  return my_string.split('').map(value => value.repeat(n)).join('');
 }

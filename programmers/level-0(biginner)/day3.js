@@ -9,7 +9,6 @@ function solution(num1, num2) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 중앙값 구하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120811
@@ -22,15 +21,12 @@ function solution(num1, num2) {
 function solution(array) {
   // 오름차순 정렬
   array.sort((a, b) => a - b);
-
   // 배열의 가운데 인덱스를 찾음
   const index = parseInt(array.length / 2, 10);
-
   return array[index];
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 최빈값 구하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120812
@@ -70,7 +66,6 @@ function solution(array) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 짝수는 싫어요
  * https://school.programmers.co.kr/learn/courses/30/lessons/120813

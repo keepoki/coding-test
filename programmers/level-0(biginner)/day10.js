@@ -23,7 +23,6 @@ function solution(dot) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 2. 2차원으로 만들기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120842
@@ -43,7 +42,6 @@ function solution(num_list, n) {
   while (num_list.length) answer.push(num_list.splice(0, n));
   return answer;
 }
-
 // 다른 사람의 풀이
 function solution(num_list, n) {
   const answer = [];
@@ -55,7 +53,6 @@ function solution(num_list, n) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 3. 공 던지기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120843
@@ -67,8 +64,7 @@ function solution(num_list, n) {
  * [1, 2, 3, 4], 2 => 3 // [1, 2, 3, 4, 5, 6], 5 => 3 // [1, 2, 3], 3 => 2
  */
 function solution(numbers, k) {
-  let answer = 0,
-    length = numbers.length;
+  let answer = 0, length = numbers.length;
 
   while (--k > 0) {
     answer += 2;
@@ -81,7 +77,6 @@ function solution(numbers, k) {
 }
 
 // ------------------------------------------------------------------------
-
 /**
  * 4. 배열 회전시키기
  * https://school.programmers.co.kr/learn/courses/30/lessons/120844
