@@ -6,17 +6,17 @@
 {
   const readline = require('readline');
   const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
+    input: process.stdin,
+    output: process.stdout,
   });
 
   let input = [];
 
   rl.on('line', function (line) {
-      input = [line];
-  }).on('close',function(){
-      str = input[0];
-      console.log(str);
+    input = [line];
+  }).on('close', function () {
+    str = input[0];
+    console.log(str);
   });
 }
 
@@ -32,17 +32,17 @@
 {
   const readline = require('readline');
   const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
+    input: process.stdin,
+    output: process.stdout,
   });
 
   let input = [];
 
   rl.on('line', function (line) {
-      input = line.split(' ');
+    input = line.split(' ');
   }).on('close', function () {
-      console.log(`a = ${input[0]}`);
-      console.log(`b = ${input[1]}`);
+    console.log(`a = ${input[0]}`);
+    console.log(`b = ${input[1]}`);
   });
 }
 
@@ -50,25 +50,25 @@
 /**
  * 3. 문자열 반복해서 출력하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/181950
- * 문자열 str과 정수 n이 주어집니다. 
+ * 문자열 str과 정수 n이 주어집니다.
  * str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
  * 예) string 5 => stringstringstringstringstring
  */
 {
   const readline = require('readline');
   const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
+    input: process.stdin,
+    output: process.stdout,
   });
 
   let input = [];
 
   rl.on('line', function (line) {
-      input = line.split(' ');
+    input = line.split(' ');
   }).on('close', function () {
-      str = input[0];
-      const n = Number(input[1]);
-      console.log(str.repeat(n));
+    str = input[0];
+    const n = Number(input[1]);
+    console.log(str.repeat(n));
   });
 }
 
@@ -76,40 +76,40 @@
 /**
  * 4. 대소문자 바꿔서 출력하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/181949
- * 영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 
+ * 영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는
  * 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
  * 예) aBcDeFg => AbCdEfGL
  */
 {
   const readline = require('readline');
   const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
+    input: process.stdin,
+    output: process.stdout,
   });
 
   let input = [];
 
   rl.on('line', function (line) {
-      input = [line];
-  }).on('close', function (){
-      const str = input[0], A = 65, a = 97;
-      const diff = a - A;
-      let result = '';
-      for (let i = 0; i < str.length; ++i) {
-          const code = str[i].charCodeAt();
-          if (code >= a) {
-              result += String.fromCharCode(code - diff);
-          } else {
-              result += String.fromCharCode(code + diff);
-          }
+    input = [line];
+  }).on('close', function () {
+    const str = input[0],
+      A = 65,
+      a = 97;
+    const diff = a - A;
+    let result = '';
+    for (let i = 0; i < str.length; ++i) {
+      const code = str[i].charCodeAt();
+      if (code >= a) {
+        result += String.fromCharCode(code - diff);
+      } else {
+        result += String.fromCharCode(code + diff);
       }
-      console.log(result);
+    }
+    console.log(result);
   });
-
-
 }
 // ------------------------------------------------------------------------
-/** 
+/**
  * 5. 특수문자 출력하기
  * https://school.programmers.co.kr/learn/courses/30/lessons/181948
  * 다음과 같이 출력하도록 코드를 작성해주세요.
@@ -118,11 +118,11 @@
 {
   const readline = require('readline');
   const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
+    input: process.stdin,
+    output: process.stdout,
   });
 
   rl.on('close', function () {
-      console.log('!@#$%^&*(\\\'\"<>?:\;');
+    console.log('!@#$%^&*(\\\'"<>?:;');
   });
 }

@@ -1,6 +1,6 @@
 # [프로그래머스 코딩테스트 입문](https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&page=1)
 
-레벨 0 단계로 구성되어 있는 "프로그래머스 코딩테스트 입문" 과정에 대한 문제풀이를 기록합니다.
+레벨 0 단계로 구성되어 있는 "프로그래머스 코딩테스트 입문" 과정에 대한 문제 풀이를 기록합니다.
 
 1. [Day 1 사칙연산](day1.js)
 2. [Day 2 사칙연산, 조건문, 배열](day2.js)

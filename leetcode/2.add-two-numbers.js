@@ -110,8 +110,10 @@ function ListNodeToArray(listNode) {
 }
 
 let numbers;
-// numbers = addTwoNumbers(arrayToListNode([2,4,3]), arrayToListNode([5,6,4]));
-// numbers = addTwoNumbers(arrayToListNode([9,9,9,9,9,9,9]), arrayToListNode([9,9,9,9]));
+numbers = addTwoNumbers(arrayToListNode([2,4,3]), arrayToListNode([5,6,4]));
+console.log(ListNodeToArray(numbers));
+numbers = addTwoNumbers(arrayToListNode([9,9,9,9,9,9,9]), arrayToListNode([9,9,9,9]));
+console.log(ListNodeToArray(numbers));
 numbers = addTwoNumbers(arrayToListNode([2,4,9]), arrayToListNode([5,6,4,9]));
 console.log(ListNodeToArray(numbers));
 
