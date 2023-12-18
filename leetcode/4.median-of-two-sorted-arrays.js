@@ -17,8 +17,8 @@ const findMedianSortedArrays = function(nums1, nums2) {
   return (mergeNums[Math.floor(median)] + mergeNums[Math.ceil(median)]) / 2;
 };
 /**
- * @param {number[]} nums1
- * @param {number[]} nums2
+ * @param {number[]} nums1 
+ * @param {number[]} nums2 
  * @returns {number[]}
  */
 function mergeArrays(nums1, nums2) {
@@ -35,21 +35,21 @@ function mergeArrays(nums1, nums2) {
   더하고 2로 나누어서 정확한 중앙값을 구해서 반환하면 된다.
  */
 
-// 처음 풀었던 방법
-// function findMedianSortedArrays(nums1, nums2) {
-//   const mergeNums = mergeArrays(nums1, nums2);
-//   if (mergeNums.length < 1) return 0;
-  
-//   let result = 0;
-//   const idx = Math.floor(mergeNums.length / 2) - 1;
-//   if (mergeNums.length % 2 === 0) {
-//     result = (mergeNums[idx] + mergeNums[idx+1]) / 2;
-//   } else {
-//     const idx = Math.floor(mergeNums.length / 2);
-//     result = mergeNums[idx];
-//   }
-
-//   return result;
-// };
-
 console.log(findMedianSortedArrays([1,2,3,4,5], [8,9,10,11,12]));
+
+// 처음 풀었던 방법
+function findMedianSortedArrays2(nums1, nums2) {
+  const mergeNums = mergeArrays(nums1, nums2);
+  if (mergeNums.length < 1) return 0;
+  
+  let result = 0;
+  const idx = Math.floor(mergeNums.length / 2) - 1;
+  if (mergeNums.length % 2 === 0) {
+    result = (mergeNums[idx] + mergeNums[idx+1]) / 2;
+  } else {
+    const idx = Math.floor(mergeNums.length / 2);
+    result = mergeNums[idx];
+  }
+
+  return result;
+};
