@@ -7,11 +7,13 @@
 // @lc code=start
 /**
  * Definition for singly-linked list.
- * function ListNode(val, next) {
- *   this.val = (val===undefined ? 0 : val)
- *   this.next = (next===undefined ? null : next)
- * }
+ * @param {number} val
+ * @param {ListNode?} next
  */
+function ListNode(val, next) {
+  this.val = (val === undefined ? 0 : val)
+  this.next = (next === undefined ? null : next)
+}
 
 /**
  * @param {ListNode} l1
@@ -64,18 +66,9 @@ const addTwoNumbers2 = function (l1, l2) {
   return iter(l1, l2);
 };
 
-// 노드를 배열로, 배열을 노드로 변환하여 확인하기 위한 소스 코드를 작성하였다.
 /**
- * @param {number} val
- * @param {ListNode} next
- */
-function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val)
-  this.next = (next === undefined ? null : next)
-}
-
-/**
- * @param {number[]} array
+ * 배열을 노드로 변환하는 함수
+ * @param {number[]} array 
  * @returns {ListNode}
  */
 function arrayToListNode(array) {
@@ -94,7 +87,8 @@ function arrayToListNode(array) {
 }
 
 /**
- * @param {ListNode} listNode
+ * 노드를 배열로 변환하는 함수
+ * @param {ListNode} listNode 
  * @returns {number[]}
  */
 function ListNodeToArray(listNode) {
@@ -109,7 +103,6 @@ function ListNodeToArray(listNode) {
 
   return array;
 }
-
 let numbers;
 numbers = addTwoNumbers(arrayToListNode([2,4,3]), arrayToListNode([5,6,4]));
 console.log(ListNodeToArray(numbers)); // [ 7, 0, 8 ]

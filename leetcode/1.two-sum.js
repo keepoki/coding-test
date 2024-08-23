@@ -11,7 +11,7 @@
  * @return {number[]}
  */
 const twoSum = function(nums, target) {
-  // 최적화를 위해 map 자료 구조를 활용하여 캐싱 처리를 한다.
+  // 최적화를 위해 map 자료구조르 활용하여 캐싱 처리를 한다.
   const numMap = new Map();
   let num, diff, cache;
   for (let i = 0; i < nums.length; ++i) {
