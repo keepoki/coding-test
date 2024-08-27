@@ -5,6 +5,7 @@
  */
 
 /**
+ * * 풀이에 실패하여 다른 사람의 풀이를 분석
  * 입력 문자열 s와 패턴 p가 주어진다. '.' 및 '*'를 지원하는
  * 정규식이 일치하는지 구현해야 한다.
  * '.'는 단일 문자와 일치한다.
@@ -36,7 +37,7 @@ const isMatch = function (s, p) {
   // 1. M[0][0] = true, 빈 문자열이 빈 패턴과 일치합니다.
   M[0][0] = true;
 
-  // 2. M[0][j]: 빈 문자열('')과 일치하는 패턴은 무엇일까요? 
+  // 2. M[0][j]: 빈 문자열('')과 일치하는 패턴은 무엇일까요?
   // '*' 패턴은 앞 뒤로 겹칠 필요 없으니 #*#*#*#*..., 또는 (#*)*으로 구성됩니다.
   // 패턴의 길이는 짝수여야 하고 짝수 위치의 문자는 '*'이어야 합니다.
   // 홀수 길이의 경우 기본 값은 false 입니다. 따라서 홀수를 생략할 수 있습니다.
@@ -77,7 +78,7 @@ const isMatch = function (s, p) {
   // M[i][j] = M[i][j - 2]
   // M[i][j] = M[i - 1][j - 2]
   // M[i][j] = M[i - 1][j]
-  // Observation: from above, we can see to get M[i][j], we need to know previous elements in M, i.e. we need to compute them first. 
+  // Observation: from above, we can see to get M[i][j], we need to know previous elements in M, i.e. we need to compute them first.
   // which determines i goes from 1 to m - 1, j goes from 1 to n + 1
 
   for (let i = 1; i < sLength + 1; i++) {

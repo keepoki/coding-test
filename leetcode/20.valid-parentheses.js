@@ -9,7 +9,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function (s) {
+const isValid = function (s) {
   let left = [];
   for (let char of s) {
     if (['(', '{', '['].includes(char)) {

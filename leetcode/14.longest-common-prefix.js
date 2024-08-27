@@ -19,7 +19,7 @@ const longestCommonPrefix = function(strs) {
 };
 // @lc code=end
 
-// ** first ** 
+// ** first **
 // function longestCommonPrefix(strs) {
 //   let prefix = strs[0];
 

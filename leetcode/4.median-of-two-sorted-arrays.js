@@ -17,8 +17,8 @@ const findMedianSortedArrays = function(nums1, nums2) {
   return (mergeNums[Math.floor(median)] + mergeNums[Math.ceil(median)]) / 2;
 };
 /**
- * @param {number[]} nums1 
- * @param {number[]} nums2 
+ * @param {number[]} nums1
+ * @param {number[]} nums2
  * @returns {number[]}
  */
 function mergeArrays(nums1, nums2) {
@@ -41,7 +41,7 @@ console.log(findMedianSortedArrays([1,2,3,4,5], [8,9,10,11,12]));
 function findMedianSortedArrays2(nums1, nums2) {
   const mergeNums = mergeArrays(nums1, nums2);
   if (mergeNums.length < 1) return 0;
-  
+
   let result = 0;
   const idx = Math.floor(mergeNums.length / 2) - 1;
   if (mergeNums.length % 2 === 0) {

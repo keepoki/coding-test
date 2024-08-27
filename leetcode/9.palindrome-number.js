@@ -16,7 +16,7 @@ const isPalindrome = function(x) {
 };
 
 /**
- * @param {number} n 
+ * @param {number} n
  * @returns {number}
  */
 function reverseNumber(n) {
@@ -30,7 +30,7 @@ function reverseNumber(n) {
 // @lc code=end
 
 /**
- * 정수 x가 주어진다. x를 좌우 반전 시켰을 때 
+ * 정수 x가 주어진다. x를 좌우 반전 시켰을 때
  * 이전과 같으면 true 아니면 false를 반환해야 한다.
  */
 console.log(isPalindrome(121)); // true

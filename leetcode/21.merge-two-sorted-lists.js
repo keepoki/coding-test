@@ -5,8 +5,8 @@
  */
 
 /**
- * @param {number} val 
- * @param {ListNode} next 
+ * @param {number} val
+ * @param {ListNode} next
  */
 function ListNode(val, next) {
   this.val = (val === undefined ? 0 : val)
@@ -30,9 +30,6 @@ const mergeTwoLists = function(list1, list2) {
   if (list1 == null && list2 == null) {
     return null;
   }
-
-  const list1First = list1;
-  const list2First = list2;
 
   let result = new ListNode(0, null);
   const first = result;
@@ -61,7 +58,7 @@ const mergeTwoLists = function(list1, list2) {
     if ((list1 || list2) && !result.next) {
       result.next = new ListNode(0, null);
     }
-    
+
     result = result.next;
   }
 
@@ -76,7 +73,7 @@ mergeTwoLists(list1, list2);
 
 /**
  * 재귀호출 방식으로 처리한다면 인자로 넘어오는 원본 데이터의 참조 값의 변경이 일어난다.
- * 실무에서 원본 데이터 변경을 지양하기 때문에 원본 데이터의 변경 없는 방식으로 풀어나갔다. 
+ * 실무에서 원본 데이터 변경을 지양하기 때문에 원본 데이터의 변경 없는 방식으로 풀어나갔다.
  */
 
 /**

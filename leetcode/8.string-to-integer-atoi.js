@@ -13,7 +13,7 @@ const myAtoi = function(s) {
   // left whitespace remove
   s = s.trim();
   if (s.length < 1) return 0;
-  
+
   // check '-' and '+'
   const firstChar = s.charAt(0);
   let result = 0;
@@ -58,9 +58,9 @@ const myAtoi = function(s) {
  * 4. 이 숫자를 정수로 변환한다.(예: "123" -> 123, "0032" -> 32)
  * 읽은 숫자가 없으면 정수는 0이 된다. 필요에 따라 부호를 변경한다.(2번 조건)
  * 5. 정수가 32비트 부호 있는 정수 범위를 벗어난 경우
- * 허용 가능한 최대(2³¹ - 1), 최소(-2³¹) 값으로 반환한다. 
+ * 허용 가능한 최대(2³¹ - 1), 최소(-2³¹) 값으로 반환한다.
  * 6. 최종 결과로 정수를 반환한다.
- * 
+ *
  * parseInt 메서드를 사용하면 쉽게 구현이 가능하겠지만
  * 이 문제의 요점은 parseInt 메서드와 같은 기능을 구현하는 데 있다.
  */

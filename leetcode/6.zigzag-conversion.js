@@ -63,8 +63,8 @@ const convert2 = function (s, numRows) {
 };
 
 /**
- * @param {string} str 
- * @param {number} numRows 
+ * @param {string} str
+ * @param {number} numRows
  * @returns {[string[]]}
  */
 function convertZigzagPattern(str, numRows) {
@@ -107,7 +107,7 @@ console.log('-----------------------------------');
 
 // 지그재그 패턴으로 변환된 문자열에 대해 출력하고 싶어서 아래와 같이 구현하였다.
 /**
- * @param {[string[]]} table 
+ * @param {[string[]]} table
  * @returns {string}
  */
 function tableConvertToString(table) {
@@ -134,15 +134,15 @@ function tableConvertToString(table) {
 let result = convertZigzagPattern('PAYPALISHIRING', 5);
 console.log(tableConvertToString(result));
 /* -- console log --
-  P       H 
-  A     S I 
-  Y   I   R 
-  P L     I G 
+  P       H
+  A     S I
+  Y   I   R
+  P L     I G
   A       N
  */
 
 /**
- * @param {string} char 
+ * @param {string} char
  * @returns {boolean} true: 한글
  */
 function hasHangulCharacter(char) {
