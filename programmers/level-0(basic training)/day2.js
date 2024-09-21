@@ -134,7 +134,7 @@
     }
     return answer.join('');
   }
-  
+
   // 다른 풀이 방법
   // function solution(my_string, overwrite_string, s) {
   //     const bSub = my_string.substring(0, s);
