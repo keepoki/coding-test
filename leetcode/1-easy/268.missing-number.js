@@ -32,7 +32,7 @@ missingNumber([1, 2]); // 0
 
 
 /**
- * AI gpt-4o-mini의 풀이
+ * AI GPT-3.5의 풀이
  * 0부터 n까지의 합을 계산식으로 최적화하는 방식이 인상적이다.
  * @param {number[]} nums
  * @return {number}

@@ -42,7 +42,7 @@ const repeatedSubstringPattern = (s) => {
 /**
  * @param {string} s
  * @return {boolean}
- * gpt-4o-mini의 풀이, 정말 심플하다.. 생각하지 못한 방법!
+ * GPT-3.5의 풀이, 정말 심플하다.. 생각하지 못한 방법!
  */
 const repeatedSubstringPattern2 = (s) => {
   // 문자열을 두 번 이어붙여서 (s + s) 그 안에서 처음과 마지막을 제외하고 s가 다시 등장하면 반복된 구조라는 뜻입니다.

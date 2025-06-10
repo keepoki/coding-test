@@ -10,7 +10,7 @@
  * 해밍 거리는 같은 길이의 두 문자열에서, 같은 위치에서 서로 다른 기호들이 몇 개인지를
  * 세는 것을 말한다.
  * 서로 겹치지 않는 비트의 거리를 구하는 것인데, 겹치지 않게 하기위해 XOR연산을 사용한다.
- * 방법이 떠오르지 않아 gpt-4o-mini의 도움을 받음
+ * 방법이 떠오르지 않아 GPT-3.5의 도움을 받음
  * @param {number} x
  * @param {number} y
  * @return {number}
@@ -22,7 +22,7 @@ console.log(hammingDistance(1, 4)); // 2
 console.log(hammingDistance(3, 1)); // 1
 
 /**
- * gpt-4o-mini의 다른 풀이
+ * GPT-3.5의 다른 풀이
  * @param {number} x
  * @param {number} y
  * @returns number

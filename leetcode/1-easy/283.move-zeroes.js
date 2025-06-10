@@ -30,7 +30,7 @@ console.log(moveZeroes([0, 0, 1]));
 console.log(moveZeroes([0, 1, 0, 3, 12]));
 
 /**
- * AI gpt-4o-mini의 풀이
+ * AI GPT-3.5의 풀이
  * 배열의 요소의 크기에 영향을 주지 않고, 요소의 값만 바꿔서 최적화 하였다.
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.

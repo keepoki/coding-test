@@ -17,7 +17,7 @@
 
 /**
  * 제한 시간 초과 문제로 AI의 풀이를 분석
- * AI gpt-4o-mini의 풀이
+ * AI GPT-3.5의 풀이
  * @param {function} isBadVersion()
  * @return {function}
  */
