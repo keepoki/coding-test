@@ -12,6 +12,9 @@ function TreeNode(val, left, right) {
   this.right = (right === undefined ? null : right)
 }
 /**
+ * 풀이에 실패하여 뤼튼AI의 풀이를 분석하였다.
+ * 모든 경우의 수에 대한 조건을 조금 놓친 것 같다는 것을 깨달았음
+ * 뤼튼의 풀이는 정말 심플하고 주석으로 설명까지 완벽하였다.
  * @param {TreeNode} root
  * @return {number}
  */
@@ -34,9 +37,3 @@ const minDepth = function(root) {
   return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
 };
 // @lc code=end
-
-/*
-  * 풀이에 실패하여 뤼튼의 풀이를 분석
-  모든 경우의 수에 대한 조건을 조금 놓친 것 같다는 것을 깨달았음
-  뤼튼의 풀이는 정말 심플하고 주석으로 설명까지 완벽하였다.
- */

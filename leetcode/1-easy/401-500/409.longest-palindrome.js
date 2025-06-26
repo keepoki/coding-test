@@ -17,6 +17,7 @@ const longestPalindrome = (s) => {
     sCount[char] = (sCount[char] || 0) + 1;
   }
 
+
   let result = 0, isOdd = false;
   for (const key in sCount) {
     const value = sCount[key];

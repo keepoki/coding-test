@@ -25,6 +25,8 @@ NumArray.prototype.sumRange = function (left, right) {
 
   return sum;
 };
+
+
 // @lc code=end
 
 const numArray = new NumArray([-2, 0, 3, -5, 2, -1]);

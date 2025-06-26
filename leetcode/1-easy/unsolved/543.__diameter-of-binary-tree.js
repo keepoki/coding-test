@@ -28,7 +28,7 @@ const diameterOfBinaryTree = (root) => {
     return Math.max(left, right) + 1;
   };
 
-  dfs(root)
+  dfs(root);
   return maxDiameter;
 };
 // @lc code=end

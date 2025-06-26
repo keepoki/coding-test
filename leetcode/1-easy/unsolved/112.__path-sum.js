@@ -12,6 +12,10 @@ function TreeNode(val, left, right) {
   this.right = (right === undefined ? null : right)
 }
 /**
+ * 풀이에 실패하여 뤼튼의 풀이를 분석하였다.
+ * 반대로 잎 노드를 찾아서 역으로 더하면서 찾는 방법을 생각하며 풀고 있었는데,
+ * 풀이를 보고 나니 굳이 그럴 필요가 없었다는 것을 깨달았다. 찾아가면서 빼버리면
+ * 한 번의 탐색으로 더 효율적으로 찾을 수 있다.
  * @param {TreeNode} root
  * @param {number} targetSum
  * @return {boolean}
@@ -35,10 +39,3 @@ const hasPathSum = function(root, targetSum) {
   return hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum);
 };
 // @lc code=end
-
-/*
-  * 풀이에 실패하여 뤼튼의 풀이를 분석
-  반대로 잎 노드를 찾아서 역으로 더하면서 찾는 방법을 생각하며 풀고 있었는데,
-  풀이를 보고 나니 굳이 그럴 필요가 없었다는 것을 깨달았다. 찾아가면서 빼버리면
-  한 번의 탐색으로 더 효율적으로 찾을 수 있다.
- */

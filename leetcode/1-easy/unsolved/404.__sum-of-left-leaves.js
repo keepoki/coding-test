@@ -12,7 +12,9 @@ function TreeNode(val, left, right) {
   this.right = (right === undefined ? null : right)
 }
 /**
+ * Codeium AI의 풀이에 도움을 받고 분석하였다.
  * 2진 트리에서 자식이 없는 왼쪽 잎 노드를 더해서 출력해야 한다.
+ * 풀이가 잘 안되었는데, 정답을 보고나니 너무나 간단하였다.
  * @param {TreeNode} root
  * @return {number}
  */

@@ -16,7 +16,7 @@ const summaryRanges = function (nums) {
   const result = [];
   let start = nums[0];
   let end = nums[0];
-
+  
   for (let i = 1; i <= nums.length; i++) {
     // 연속된 숫자인지 확인하여 끝 범위를 갱신한다.
     if (nums[i - 1] === nums[i] - 1) {

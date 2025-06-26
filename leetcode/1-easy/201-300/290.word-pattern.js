@@ -28,7 +28,7 @@ const wordPattern = (pattern, s) => {
     const char = pattern[i];
     const word = words[i];
 
-    //  key: a, value: dog
+    // key: a, value: dog
     if (!charToWord.has(char)) {
       charToWord.set(char, word);
     }
