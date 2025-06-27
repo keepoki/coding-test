@@ -6,7 +6,7 @@
 
 // @lc code=start
 /**
- * 띄어씌기로 구분 되어있는 단어들을 뒤집는 문제이다.
+ * 띄어쓰기로 구분 되어있는 단어들을 뒤집는 문제이다.
  * @param {string} s
  * @return {string}
  */
@@ -38,7 +38,7 @@ const reverseWords2 = (s) => {
       if (char === ' ') {
         result += ' ';
       }
-      
+
       word = '';
     } else {
       word += char;
