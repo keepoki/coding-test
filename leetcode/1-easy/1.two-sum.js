@@ -71,10 +71,13 @@ const twoSum = (nums, target) => {
  * 후속 조치:
  * 시간 복잡도 O(n²)보다 작은 알고리즘을 생각해낼 수 있나요?
  *
- * 후속 조치 아이디어:
+ * 풀이 과정:
  * 데이터를 value와 index 속성으로 재구성하고
  * value를 기준으로 정렬해서 투 포인터로 탐색하는 방식은 어떨까?
- * 데이터 재구성과 정렬을 한 번에 하는 방법은? 없네, 재구성 후 정렬하자
+ * 데이터 재구성과 정렬을 한 번에 하는 방법은? 없네, 재구성 후 정렬하자.
+ *
+ * 풀이 요약:
+ * 숫자-인덱스 쌍을 정렬한 후, 양 끝에서부터 투 포인터로 합을 탐색한다.
  *
  * 시간 복잡도: O(n log n), 공간 복잡도: O(N)
  *
@@ -89,10 +92,12 @@ const twoSum2 = (nums, target) => {
 
   let left = 0;
   let right = mappedNums.length - 1;
+
   while (left < right) {
     const leftNum = mappedNums[left];
     const rightNum = mappedNums[right];
     const sum = leftNum.value + rightNum.value;
+
     if (sum === target) {
       return [leftNum.index, rightNum.index];
     } else if (sum < target) {
@@ -112,9 +117,12 @@ const twoSum2 = (nums, target) => {
  * 후속 조치:
  * 시간 복잡도 O(n²)보다 작은 알고리즘을 생각해낼 수 있나요?
  *
- * 후속 조치 아이디어:
+ * 풀이 과정:
  * 해시 맵 (key: num, value: index) 구성으로 현재 값을 저장하면서
  * target - nums[i]의 값이 해시 맵에 존재한다면 정답을 반환할 수 있지 않을까?
+ *
+ * 풀이 요약:
+ * 해시 맵에 저장하면서 target에서 현재 숫자를 뺀 값이 해시 맵에 있는지 확인한다.
  *
  * 실행 순서 디버깅:
  * Input: nums = [2,7,11,15], target = 9
