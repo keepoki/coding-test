@@ -29,3 +29,10 @@ LeetCode 코딩 테스트 문제 풀이를 기록합니다.
 | [268.missing-number.js](1-easy/array/268.missing-number.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) ![math](https://img.shields.io/badge/math-blue?style=flat) ![bit-manipulation](https://img.shields.io/badge/bitManipulation-blue?style=flat) |
 | [283.move-zeroes.js](1-easy/array/283.move-zeroes.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) ![two-pointers](https://img.shields.io/badge/twoPointers-blue?style=flat) |
 | [414.third-maximum-number.js](1-easy/_followup-unsolve/414.third-maximum-number.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [448.find-all-numbers-disappeared-in-an-array.js](1-easy/_unsolve/448.find-all-numbers-disappeared-in-an-array.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [485.max-consecutive-ones.js](1-easy/array/485.max-consecutive-ones.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [495.teemo-attacking.js](1-easy/array/495.teemo-attacking.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [561.array-partition.js](1-easy/array/561.array-partition.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [566.reshape-the-matrix.js](1-easy/array/566.reshape-the-matrix.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [605.can-place-flowers.js](1-easy/array/605.can-place-flowers.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
+| [628.maximum-product-of-three-numbers.js](1-easy/array/628.maximum-product-of-three-numbers.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) ![math](https://img.shields.io/badge/math-blue?style=flat) |
