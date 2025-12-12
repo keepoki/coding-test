@@ -37,3 +37,4 @@ LeetCode 코딩 테스트 문제 풀이를 기록합니다.
 | [605.can-place-flowers.js](1-easy/array/605.can-place-flowers.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
 | [628.maximum-product-of-three-numbers.js](1-easy/array/628.maximum-product-of-three-numbers.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) ![math](https://img.shields.io/badge/math-blue?style=flat) |
 | [643.maximum-average-subarray-i.js](1-easy/array/643.maximum-average-subarray-i.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) ![sliding-window](https://img.shields.io/badge/slidingWindow-blue?style=flat) |
+| [661.image-smoother.js](1-easy/array//661.image-smoother.js) | easy | ![array](https://img.shields.io/badge/array-blue?style=flat) |
